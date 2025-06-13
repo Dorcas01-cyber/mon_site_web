@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><span class="white">Dorcas</span> <span class="blue">DOFONNOU</span></h1>
+            <ul>
+                <li><a href="#About" class="blue"> Accueil </a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+         <div class="hero-text">
+            <p>Je suis <span class="blue">Dorcas </span>,Biologiste de base et  Développeuse Web en devenir
+               <br> passionnée par tout ce qui à rapport avec IA et le numérique en général</p>
+            <button type="submit" class="btn"> <a href="#projects"> Voir mes projets </a></button>
+        </div>
+        <div class="hero-image">
+            <img src="12.png" alt="Photo de Rockson">
+        </div>
+    </section>
+    
+
+    <section id="about">
+        <h2 class="title">À Propos</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Je m'appelle <span class="blue">Dorcas</span>, passionnée par la 
+                    <br>création des sites web modernes et interactifs</p>
+                <p>Je suis actuellement étudiante en <span class="blue"> immunologie</span>, 
+                    <br>et je m'intéresse aussi à création visuelle, au développement web.</p>
+                    <p>J'adore les défis et transfomer mes idées en projets concrets, 
+                        <br>explorant les liens possibles entre sciences et créativité.</p>
+                <button type="submit" class="btn"> <a href="CV DOFONNOU Dorcas.pdf" download >Télécharger mon CV</a></button>
+            </div>
+            <div class="about-image">
+                <img src="image.jpg" alt="Photo de Dorcas">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="skills">
+        <h2 class="title">Mes Compétences</h2>
+        <div class="skills-container">
+            <!-- Soft Skills -->
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <div class="skill">
+                    <p>Gestion de projet</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Résolution de problème</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Adaptabilité</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Hard Skills -->
+            <div class="skill-card">
+                <h3>Hard Skills</h3>
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>VS Code</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2 class="title">Mes Projets</h2>
+        <div class="projects-container">
+            <!-- Projet 1 : Developpement Web -->
+            <div class="project-card">
+                <p>Création de site Web dynamique </p>
+                <p class="tags">#html, #css, #js</p>
+                <button class="butn" onclick="afficherDetailsProjet('projet1')">Voir</button>
+                <div id="projet1" class="projet-details" style="display: none;">
+                    <p>Ce projet a été élaborer avec HTML, CSS et JavaScript.</p>
+                    <a class='butn' href='/temps_reel'>Lien vers le projet</a>
+                </div>
+            </div>
+    
+            <!-- Projet 2 : Developpement d'application  -->
+            <div class="project-card">
+                <p>Developpement d'application mobile</p>
+                <p class="tags">#html, #css, #js</p>
+                <button class="butn" onclick="afficherDetailsProjet('projet2')">Voir</button>
+                <div id="projet2" class="projet-details" style="display: none;">
+                    <p>Le développement d'applications mobiles consiste à concevoir, programmer et déployer des applications pour smartphones et tablettes.</p>
+                    <a class='butn' href='/calculateur'>Lien vers le projet</a>
+                </div>
+            </div>
+    
+            <!-- Projet 3 : Manipulation de tableau en JavaScript -->
+            <div class="project-card">
+                <p>Manipulation de tableau en JavaScript</p>
+                <p class="tags">#html, #css, #js</p>
+                <button class="butn" onclick="afficherDetailsProjet('projet3')">Voir</button>
+                <div id="projet3" class="projet-details" style="display: none;">
+                    <p>Ce projet utilise JavaScript pour ajouter, supprimer et trier des élements d'un tableau</p>
+                    <a class='butn' href='/tableau'>Lien vers le projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>
+            <span class="grand">Vous avez un <span class="blue">projet en tête ?</span></span> <br>
+            <span class="milieu">N'hésitez pas à me <span class="blue">contacter</span></span>
+        </h2>
+        <form class="contact-form" id="contactForm">
+            <div class="input-group">
+                <div>
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" id="prenom" placeholder="...........">
+                    <small class="error-message"></small>
+                </div>
+                <div>
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" placeholder="............">
+                    <small class="error-message"></small>
+                </div>
+            </div>
+            <label for="sujet">Votre sujet</label>
+            <input type="text" id="sujet" placeholder="Développement d'un site vitrine">
+            <small class="error-message"></small>
+            
+            <label for="message">Écrivez votre message ici</label>
+            <textarea id="message" rows="5"></textarea>
+            <small class="error-message"></small>
+            
+            <button type="submit" class="btn">Envoyer</button>
+            <p id="successMessage" class="hidden">Message envoyé avec succès ! 🎉</p>
+        </form>
+    </section>
+    <div id="overlay"></div>
+       
+ <footer>
+    <p>Designed by <span class="blue"> Dorcas</span> with HTML CSS JS</p>
+    <p class="copyright">Tous droits réservés - 2025</p>
+ </footer>
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
+
